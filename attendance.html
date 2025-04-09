@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Attendance</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mark Attendance</h1>
+    <form id="attendanceForm">
+      <select id="empSelect" required>
+        <option value="">--Select Employee--</option>
+      </select>
+      <select id="status" required>
+        <option value="Check-In">Check-In</option>
+        <option value="Check-Out">Check-Out</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Attendance Records</h2>
+    <table id="attendanceTable">
+      <thead>
+        <tr>
+          <th>Employee</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+      <!-- 🧹 Clear All History -->
+      <button onclick="clearAllAttendanceHistory()" style="background-color: crimson; color: white; margin-top: 10px;">
+        Clear All Attendance History
+      </button>
+      
+    <!-- 📁 Export Full Table -->
+    <button onclick="exportToPDF()">Export All Attendance to PDF</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="js/attendance.js"></script>
+</body>
+</html>

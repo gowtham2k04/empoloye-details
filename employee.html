@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Details</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Details</h1>
+
+    <div class="flex-wrapper">
+      <!-- Left: Form -->
+      <form id="employeeForm" class="form-section">
+        <input type="file" id="photo" accept="image/*" />
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="text" id="empId" placeholder="Employee ID" required />
+        <input type="number" id="age" placeholder="Age" required />
+        <input type="email" id="email" placeholder="Email" required />
+      
+        <select id="gender" required>
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      
+        <input type="text" id="department" placeholder="Department" required />
+        <input type="text" id="role" placeholder="Role" required />
+        <input type="date" id="joiningDate" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <textarea id="address" placeholder="Address" required></textarea>
+      
+        <button type="submit">Save Employee</button>
+      </form>
+      
+      <!-- Right: Employee List -->
+      <div class="list-section">
+        <h2>Saved Employees</h2>
+        <ul id="employeeList"></ul>
+        <div class="button-wrapper">
+          
+          <a href="attendance.html" class="view-btn">📊 View Attendance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/employee.js"></script>
+</body>
+</html>

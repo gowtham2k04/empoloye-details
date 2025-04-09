@@ -1,0 +1,126 @@
+/*employee page start*/
+.employee-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.emp-photo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+}
+
+.emp-details {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Form on left */
+.form-section {
+  flex: 1;
+  min-width: 300px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* List on right */
+.list-section {
+  flex: 1;
+  min-width: 300px;
+  background: #e9f7ef;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+#employeeList li {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #28a745;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.view-btn:hover {
+  background: #218838;
+}
+
+/* employee page end */
+
+/* attendance page start*/
+.search-section {
+  margin-top: 30px;
+}
+
+#searchEmpId {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* attendance page end */
